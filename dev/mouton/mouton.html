@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MONTON</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" href="tools/normalize.css"/>
+	<style type="text/css">
+     * { text-align: center; }
+     #canvanim { width: 512px; height: 256px; background-color: mintcream; border-width: 2px; border-style: solid; margin-left: auto; margin-right: auto;}
+     #stop_clic:hover { font-variant: small-caps; cursor: pointer; }
+   </style>
+   <script type="text/javascript" src="tools/sprites.js"></script>
+</head>
+<body>
+   <div class="canva">
+		<canvas id="canvanim" width="512" height="256"> 
+			Ne supporte pas canvas.
+		</canvas>
+	</div>
+	<div id="stop_clic">Start</div>
+</body>
+<script type="text/javascript">
+	// Contexte graphique
+ 	var cv = document.getElementById("canvanim");
+	var ctx = cv.getContext("2d");
+	
+	// Animation basique
+	 var imageURL = 'images/sheeppoe.png';
+   var mouton = new CanvasSprite(imageURL,236,108,40,40,16,8,ctx,cv);
+   var courir = [0,1,2,3,4,5,6,7];
+   var rouler = [118,119,120,121,122,123,124,125,126];
+   var bailler = [71,72,73,74,75,74,73,72,71]; 
+   var anim = [];
+   courir.forEach(e => anim.push(e));
+   rouler.forEach(e => anim.push(e));
+   bailler.forEach(e => anim.push(e)); 
+
+   mouton.addAnimation('anim',anim);
+   mouton.selectAnimation('anim',true);
+	
+   mouton.image.addEventListener("load",function(evt) {
+   	this.ready = true;
+   	var stopclic = document.getElementById("stop_clic");
+   	var state = false;
+   	stopclic.addEventListener("click",function() {
+   		if (state == true) {  state = false; mouton.stopAnim(); }
+   		else { state = true; mouton.simpleAnim(100); }
+   	});
+   },false);
+
+	
+   // lier stop_clic à l'animation
+   mouton.image.addEventListener("load",function(evt) {
+   	this.ready = true;
+   	var stopclic = document.getElementById("stop_clic");
+   	var state = false;
+   	stopclic.addEventListener("click",function() {
+   		if (state == true) {  state = false; mouton.stopAnim(); }
+   		else { state = true; mouton.simpleAnim(100); }
+   	});
+   },false);
+</script>
+</html>

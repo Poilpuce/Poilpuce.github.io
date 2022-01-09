@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeu du Morpion</title>
+        <meta charset="UTF-8" />
+        <style>
+            table { background-color: mintcream; width: 300px;
+                height: 300px;}
+            td { border: solid 2px black;
+                text-align: center;
+                width: 100px;
+                height: 100px;}
+            .bout{
+                position :fixed; left: 24%; top: 360px;
+                transform: translate(-50%, -50%);}
+        </style>
+        
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><img src="" alt="" id="case0"/></td>
+                <td><img src="" alt="" id="case1"/></td>
+                <td><img src="" alt="" id="case2"/></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="case3"/></td>
+                <td><img src="" alt="" id="case4"/></td>
+                <td><img src="" alt="" id="case5"/></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="case6"/></td>
+                <td><img src="" alt="" id="case7"/></td>
+                <td><img src="" alt="" id="case8"/></td>
+            </tr>
+        </table>
+        <br/>
+        <button class="bout" onClick="window.location.reload();">Rejouer</button>
+        <script src="morpionjs.js">
+        </script>
+        <script>
+            var M = new Morpion();
+            M.nouvellePartie();
+        </script>
+    </body>
+</html>
