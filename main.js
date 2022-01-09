@@ -45,7 +45,7 @@ var audio3 = new Audio('audio/voix03.mp3');
 var audio4 = new Audio('audio/voix04.mp3');
 var audio5 = new Audio('audio/final.mp3');
 var fumee = new Audio('audio/fumee.mp3');
-var musique = new Audio('audio/musique1.mp3');
+var musique = new Audio('audio/musique.mp3');
 
 var playaudio2 = document.getElementsByClassName('playaudio2')[0];
 var playaudio3 = document.getElementsByClassName('playaudio3')[0];
