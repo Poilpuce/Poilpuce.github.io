@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Book Multimédia</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="fusee.png" />
+        
+    </head>
+        
+
+    <body>
+
+        <div class="fixedmenu1">
+           <img src="fixedmenu1.png"> 
+        </div>
+
+        <div class="fixedmenu2">
+           <img src="fixedmenu2.png"> 
+        </div>
+
+        <div id="mutebtn">
+           <img src="mute.png" id="imgmutebtn"> 
+        </div>
+
+        <!-- <audio id="audio1" controls>
+            <source src="audio/voixintro.mp3" type="audio/mpeg">
+        </audio> -->
+
+        <div class="backbtn">
+           <img src="back.png"> 
+        </div>
+
+        <div controls id="fullscreenbtn">
+           <img src="infscreen.png" id="imgfscreen"> 
+        </div>
+
+        <div class="fusee">
+           <img src="fusee.png"> 
+        </div>
+
+        <div class="panelCon"> 
+        <div id="pane-5" class="panel">
+            <img src="breche.svg" class="breche">
+            <img src="start.png" class="playaudio5">
+            <section class="script5">
+                <p>Voilà donc...</br></br>Je pense que vous l'aurez compris. Cette fusée, c'est moi, Paul BRILLAND.</br></br>Oh ? Que se passe-t-il, la fusée semble aspirée dans une brèche ? Que faire ??
+                </p>
+            </section>
+            <p class="attendre">ATTENDRE</p>
+            <p class="yaller">Y ALLER !</p>
+        </div>
+        <div id="pane-4"class="panel">
+            <img src="start.png" class="playaudio4">
+            <section class="script4">
+                <p>Là où elle croit pouvoir se démarquer de ses nombreuses homologues devant la galaxie du web,</br> c'est au niveau des astres infographiques et maquetique.</br></br>Elle souhaite communiquer et véhiculer des messages au travers d'infographies,</br>et elle en est sure, ses longues heures passées à admirer les différents astres</br>de la galaxie du web lui offrent un vrai bagage et un certain souci du détail dans l'ergonomie d'un visuel.
+                </p>
+            </section>
+        </div>
+        <div id="pane-3"class="panel">
+            <img src="start.png" class="playaudio3">
+            <h3 class="titre3">Cliquez sur les différentes planètes</br>pour découvrir mon travail</h3>
+            <section class="script3">
+                <p>On la trouve vite grandie des nombreuses expériences qu'elle a vécues durant sa formation ;</br></br>On remarque autour d'elle qu'elle a su mettre à profit ses qualités pour découvrir le monde qui la passionne tant.</br></br>La voilà maintenant capable de monter des vidéos, de retoucher des images, de créer des illustrations, et même de concevoir et réaliser des pages web.
+                </p>
+            </section>
+            <img src="img/planetillu.png" class="planetillu" />
+            <img src="img/planetps.png" class="planetps" />
+            <img src="img/planetuiux.png" class="planetuiux" />
+            <img src="img/planetvideo.png" class="planetvideo" />
+            <img src="img/planetdev.png" class="planetdev" />
+
+        </div>
+        <div id="pane-2" class="panel">
+            <img src="start.png" class="playaudio2">
+            <section class="script2">
+                <p>Non sans quelques craintes au début, elle trouva vite sa place parmi ses homologues.</br>Elle avait cette capacité à s'entourer et à se sociabiliser. Sa timidité est très vite vaincue.</br></br>Sa passion pour la galaxie du web l'a poussée à montrer tout l'investissement et la détermination qui coule en elle.</br>Et, bien que la route vers son objectif fut longue, et parfois semée d'embuches, </br>elle a su s'adapter et garder la tête haute.
+                </p>
+            </section>
+        </div>
+
+        <div id="pane-1" class="panel">
+            <section class="script1">
+                <p>Voici une mystérieuse petite fusée. </br></br>
+                C'est très tôt après son assemblement qu'elle a montré son attrait pour la galaxie "internet".</br>
+On la voyait souvent se pencher sur les astres "vidéo" "réseaux sociaux" et "création",</br>elle passait des heures et des heures à les contempler.</br></br>
+En grandissant elle en était sure : elle voulait les atteindre et contribuer à leur grandeur.
+</br></br> La voilà partie, prête à conquérir cet univers.
+                </p>
+            </section>
+            <section class="textcliquez">
+                <p>CLIQUEZ SUR LA FUSÉE POUR LE LANCEMENT</p>
+            </section>
+        </div>
+        </div>
+
+    <!-- MODAL D'INTRO -->
+
+        <div id="modal_intro" class="modalintro">
+            <img src="start.png" alt="Fermer" class="btn-start">
+            <section class="textstart">
+                <p>APPUYEZ SUR LE BOUTON POUR DEMARRER</p>
+            </section>
+
+        </div>
+
+    <!-- MODALS -->
+
+        <div id="modal_finalatt" class="modal">
+            <h2 class="titremodal">Merci d'avoir attendu !!</h2>
+            <embed class="embedcv" src="canadaCV.pdf" width=450 height=670 type='application/pdf'/>
+            <div class="fuseefincv">
+                <img src="fusee.png"> 
+            </div>
+            <p class="mercitext">merci d'avoir attendu,</br>regardez ce que j'ai trouvé, je vous l'offre !</p>
+            <p class="dezoomez">si vous voyez ceci, merci de dézoomer pour voir le pdf</p>
+            <h3 class="btn-fermer recommencer2">Retour</h3>
+        </div>
+
+        <div id="modal_finalcv" class="modal">
+            <h2 class="titremodal">Merci d'être venu !!</h2>
+            <embed class="embedcv" src="canadaCV.pdf" width=450 height=670 type='application/pdf'/>
+            <div class="fuseefincv">
+                <img src="fusee.png"> 
+            </div>
+            <p class="mercitext">merci d'être venu me chercher,</br>regardez ce que j'ai trouvé !</p>
+            <p class="dezoomez">si vous voyez ceci, merci de dézoomer pour voir le pdf</p>
+            <h3 class="btn-fermer recommencer">Retour</h3>
+        </div>
+
+        <div id="modal_illustrator" class="modal">
+            <img src="img/close.svg" alt="Fermer" class="btn-fermer">
+            <div>
+                <h2 class="titremodal">Création d'illustrations</h2>
+                <div class="galleryillu">
+                    <img class="illu1" src="img/toad-kart.png"/>
+                    <img class="illu2" src="img/infos2.png"/>
+                    <img class="illu3" src="img/wallpaperpaul.png"/>
+                </div>
+                <div class="galleryillu" id="galillu2">
+                    <img class="illu4" src="img/dragonite.png"/>
+                    <img class="illu5" src="img/madeline.png"/>
+                    <img class="illu6" src="img/webtheshine.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_ps" class="modal">
+            <img src="img/close.svg" alt="Fermer" class="btn-fermer">
+            <h2 class="titremodal">Montage photo</h2>
+                <div class="galleryps">
+                    <img class="ps1" src="img/securite.png"/>
+                    <img class="ps2" src="img/citation.jpg"/>
+                </div>
+                <h3 class="soustitremodal">Comment je procède ?</h3>
+                <p>De tous les domaines que j'ai pratiqué durant mes études en multimédia, la retouche de photo et création de visuels infographiques sont probablement ceux que j'ai commencé à utiliser en premier. En effet dès mon plus jeune âge j'ai commencé à jouer avec ces logiciels de retouche photo, au début de manière très basique...</br></br>
+
+                Avec l'âge j'ai commencé à réaliser des visuels plus sérieux afin d'attirer l'oeil sur les vidéos de ma chaîne Youtube. J'ai peut-être mis un certain temps avant de vraiment pouvoir présenter un rendu "passable".</br></br>
+
+                Lorsque j'ai une idée de réalisation infographique, ou de retouche photo, je commence d'abord par chercher les bonnes matières premières. Je passe parfois la majorité du temps d'un projet à trouver l'image source parfaite (bonne qualité, beau visuel...). Ensuite seulement je crée le fichier. De par mes études j'ai appris très rapidement qu'une image en 300ppp offrira le meilleur rendu possible et qu'il était conseillé de créer ses fichiers à ce format-ci.</br></br>
+
+                Pour ce qui est du travail de l'image en lui-même je dirais qu'il diffère énormément en fonction du type de visuel demandé. Par exemple, pour l'infographie de prévention routière ce sont surtout les outils plume et de colorimétrie qui ont été mis à l'honneur.</p>
+
+            </div>
+
+        <div id="modal_video" class="modal">
+            <img src="img/close.svg" alt="Fermer" class="btn-fermer">
+            <h2 class="titremodal">Montage vidéo</h2>
+                <div class="galleryvid">
+                    <iframe class="vid1" width="560" height="315" src="https://www.youtube.com/embed/QVbLG57rSyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid2" width="176" height="315" src="https://www.youtube.com/embed/rqh_VipT00g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid3" width="560" height="315" src="https://www.youtube.com/embed/A3hyQUJ5_hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3 class="soustitremodal">Comment je procède ?</h3>
+                <p>Le montage vidéo est l'un des domaines les plus passionnants parmi ceux abordés en DUT Métiers du Multimédia et de l'Internet. J'ai longtemps voulu réaliser des courts-métrages vidéo destinés à internet. Même si ce n'était plus le cas lors de mon arrivée en DUT MMI, j'ai toujours un intérêt certain pour ce vaste monde.</br></br>
+
+                L'IUT dans lequel j'ai fait mes études m'a permis de pouvoir manipuler pour la première fois du matériel professionnel, je possède donc certaines notions sommaires en production audiovisuelle.</br></br>
+
+                En revanche ce que j'ai été le plus amené à faire, que ce soit durant mon temps libre, ou pour des projets scolaires, c'est le montage vidéo. Après avoir enregistré mes rushs avec la caméra et les sons avec micro, la première étape c'est de synchroniser les pistes. Ceci fait, il faut ensuite procéder au dérushage. Une fois ces parties initiales réalisées, on peut commencer à exprimer sa créativité.</br>
+
+                A l'aide d'un storyboard réalisé au préalable on place les plans dans le bon ordre et on donne vie au projet ! C'est très satisfaisant de sentir qu'on se rapproche de ce qu'on avait en tête au départ.</p>
+        </div>
+
+        <div id="modal_uiux" class="modal">
+            <img src="img/close.svg" alt="Fermer" class="btn-fermer">
+            <h2 class="titremodal">Maquettage UI/UX</h2>
+            
+            <embed class="embeduiux1" src="Wireframe.pdf" width=800 height=500 type='application/pdf'/>
+            <embed class="embeduiux2" src="Maquette.pdf" width=800 height=500 type='application/pdf'/>
+
+            <embed class="embeduiux1b" src="Wireframe.pdf" width=400 height=250 type='application/pdf'/>
+            <embed class="embeduiux2b" src="Maquette.pdf" width=400 height=250 type='application/pdf'/>
+
+                <h3 class="soustitremodal">Comment je procède ?</h3>
+                <p>Pour ce qui est de l'expérience utilisateur, durant ma formation multimédia, j'ai appris à réfléchir aux moyens de créer l'interface optimale pour l'utilisateur.</br></br>
+                On nous a appris à toujours commencer par étudier la cible, via des personnas par exemple, afin de comprendre à qui on a affaire et comment s'adapter à ses habitudes d'utilisation.</br>
+                Dans le cadre d'une entreprise il est aussi important de se renseigner sur ses concurrents au travers d'une veille concurrentielle, où l'on dresse un tableau SWOT des points-clés des sites de nos homologues.</br></br>
+                Vient ensuite la phase wireframe, où l'on dresse un premier jet de la page à réaliser très basiquement avec simplement les emplacements des boutons et les quelques zones principales. (voir pdf de gauche)</br>
+                Enfin, quand ce wireframe (ou zoning) est validé, on peut enfin commencer la maquette UI Design, ma partie préférée. On doit produire un rendu le plus proche possible du site final après son développement. Il faut alors un prototype le plus complet et interactif possible. (voir pdf de droite)</p>
+        </div>
+
+        <div id="modal_dev" class="modal">
+            <img src="img/close.svg" alt="Fermer" class="btn-fermer">
+            <h2 class="titremodal">Intégration Web</h2>
+                    <embed class="mouton" src="dev/mouton/mouton.html" width=800 height=500>
+                    <embed class="devmorp" src="dev/morpion/index.html" width=800 height=500> 
+                <h3 class="soustitremodal">Comment je procède ?</h3>
+                <p>Pour ce qui est du développement, ici surtout de l'intégration web, je n'avais aucune expérience avant d'arriver en DUT MMI. J'avais déjà pu toucher au HTML et au CSS avant, mais j'ai totalement découvert le JavaScript en cours.
+
+                C'est un langage que j'ai mis un certain temps à prendre en main. Mais à l'aide des cours pratiques (voir les modules ci-dessus) et de certains projets personnels, comme ce book multimédia par exemple, j'ai pu comprendre le fonctionnement de ce dernier.
+
+                Lorsqu'on programme en JavaScript on voit en permanence le champ des possibles s'étendre, on se perd dans la documentation et on a sans cesse envie de chercher à faire mieux. Je vois ce langage comme un réel défi.</p>  
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+</html>
